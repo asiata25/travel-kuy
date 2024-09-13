@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Category extends Model
@@ -24,8 +25,8 @@ class Category extends Model
         return $this->hasMany(Category::class, 'parent_id');
     }
 
-    function packages(): HasMany
+    function packages(): BelongsToMany
     {
-        return $this->hasMany(HolidayPackage::class);
+        return $this->belongsToMany(HolidayPackage::class, foreignPivotKey: 'category_id');
     }
 }

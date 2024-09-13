@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class HolidayPackage extends Model
@@ -13,9 +14,9 @@ class HolidayPackage extends Model
 
     protected $guarded = ['id', 'created_at', 'updated_at'];
 
-    function categories(): HasMany
+    function categories(): BelongsToMany
     {
-        return $this->hasMany(Category::class);
+        return $this->belongsToMany(Category::class, foreignPivotKey: 'package_id');
     }
 
     function variants(): HasMany

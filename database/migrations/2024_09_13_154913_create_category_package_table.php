@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('category_package', function (Blueprint $table) {
+        Schema::create('category_holiday_package', function (Blueprint $table) {
             $table->id();
             $table->foreignUuid('category_id')->constrained('categories')->cascadeOnDelete();
             $table->foreignUuid('package_id')->constrained('holiday_packages')->cascadeOnDelete();
