@@ -19,8 +19,9 @@ class CategoryFactory extends Factory
         return [
             'name' => fake()->word(),
             'slug' => fake()->unique()->slug(),
+            'color_hex' => sprintf('#%06X', mt_rand(0, 0xFFFFFF)),
             'is_visible' => fake()->boolean(),
-            'description' => fake()->sentence()
+            'description' => fake()->sentence(),
         ];
     }
 }
