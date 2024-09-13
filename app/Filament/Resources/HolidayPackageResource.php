@@ -33,10 +33,13 @@ class HolidayPackageResource extends Resource
 {
     protected static ?string $model = HolidayPackage::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-swatch';
-    protected static ?string $activeNavigationIcon = 'heroicon-s-swatch';
+    // TODO: change icon to hugeicons-island
+    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $activeNavigationIcon = 'heroicon-s-rectangle-stack';
 
     protected static ?string $navigationGroup = 'Product';
+
+    protected static ?int $navigationSort = 0;
 
     public static function form(Form $form): Form
     {
@@ -126,7 +129,11 @@ class HolidayPackageResource extends Resource
                     ->date()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('categories.name'),
+                TextColumn::make('categories.name')
+                    ->extraAttributes(['class' => 'max-w-96'])
+                    ->wrapHeader()
+                    ->badge()
+                    ->toggleable(isToggledHiddenByDefault: true),
                 IconColumn::make('is_visible')
                     ->label('Visibility')
                     ->boolean()

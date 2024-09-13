@@ -13,7 +13,7 @@ class Category extends Model
 {
     use HasFactory, HasUuids;
 
-    protected $fillable = ['name', 'slug', 'parent_id', 'is_visible', 'description'];
+    protected $guarded = ['id'];
 
     function parent(): BelongsTo
     {
