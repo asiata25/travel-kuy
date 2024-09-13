@@ -1,0 +1,1 @@
+<img src="{{asset('images/logo.png')}}" alt="travel kuy logo" class="h-10">
