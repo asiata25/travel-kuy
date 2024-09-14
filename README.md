@@ -80,7 +80,8 @@ This diagram illustrates the relationships between Users, Transactions, Holiday 
    npm run dev
    ```
 
-The admin dashboard should now be accessible at `http://localhost:8000/admin`.
+3. Open `http://localhost:8000/dashboard`
+   <img src="dashboard.png"/>
 
 ## Test Account
 
