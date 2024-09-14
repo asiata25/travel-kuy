@@ -28,6 +28,7 @@ use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class HolidayPackageResource extends Resource
@@ -41,6 +42,23 @@ class HolidayPackageResource extends Resource
     protected static ?string $navigationGroup = 'Product';
 
     protected static ?int $navigationSort = 0;
+
+    protected static ?string $recordTitleAttribute = 'name';
+
+    public static function getGloballySearchableAttributes(): array
+    {
+        return ['name', 'slug', 'description'];
+    }
+
+    public static function getGlobalSearchResultDetails(Model $record): array
+    {
+        return [
+            'Description' => $record->description,
+            'Type' => $record->type,
+        ];
+    }
+
+    protected static int $globalSearchResultsLimit = 10;
 
     public static function form(Form $form): Form
     {
