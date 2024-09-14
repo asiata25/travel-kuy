@@ -14,10 +14,9 @@ return new class extends Migration
         Schema::create('transactions', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->foreignUuid('user_id')->constrained()->cascadeOnDelete();
-            $table->foreignUuid('holiday_packages_id')->constrained()->cascadeOnDelete();
             $table->foreignUuid('package_variants_id')->constrained()->cascadeOnDelete();
             $table->integer('total_price');
-            $table->enum('status', ['pending', 'precessing', 'completed', 'declined']);
+            $table->enum('status', ['pending', 'processing', 'completed', 'declined']);
             $table->string('payment_method');
             $table->softDeletes();
             $table->timestamps();

@@ -10,6 +10,8 @@ class EditTransaction extends EditRecord
 {
     protected static string $resource = TransactionResource::class;
 
+    public $selected_package = "";
+
     protected function getHeaderActions(): array
     {
         return [
