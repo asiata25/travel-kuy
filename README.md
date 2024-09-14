@@ -1,66 +1,101 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://private-user-images.githubusercontent.com/41773797/257018536-8d5a0b12-4643-4b5c-964a-56f0db91b90a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjYyOTA2NDEsIm5iZiI6MTcyNjI5MDM0MSwicGF0aCI6Ii80MTc3Mzc5Ny8yNTcwMTg1MzYtOGQ1YTBiMTItNDY0My00YjVjLTk2NGEtNTZmMGRiOTFiOTBhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE0VDA1MDU0MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU4ZDBiNGE4NWQ4NTFmMTlhZDMyM2QwMjBmNmNhNTRkM2MxZjcyOGJiNjcyZGZmMjY2ZTNkNWU5MzRjZGE4OWQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.fKHeE2JCvb0YH2f5Zt9gAy8HtsoLLd1skML3SqX-mZQ" alt="Filament Banner">
 </p>
 
-## About Laravel
+# TravelKuy Admin Dashboard
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+TravelKuy Admin Dashboard is a powerful administrative interface built with Laravel and Filament. It provides comprehensive management capabilities for a travel booking system, allowing administrators to efficiently handle transactions, user accounts, holiday packages, and categories.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **User Management**: Create, view, update, and delete user accounts.
+- **Transaction Handling**: Manage and track all travel bookings and transactions.
+- **Holiday Package Management**: Add/Edit poster image, Create, and manage holiday packages offered to customers.
+- **Category Organization**: Organize holiday packages into categories for easy navigation.
+- **Dashboard Analytics**: View key metrics and statistics about bookings and user activity.
 
-## Learning Laravel
+## Entity-Relationship Diagram (ERD)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+To understand the data structure of TravelKuy, please refer to our Entity-Relationship Diagram:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+![TravelKuy ERD](ERD.png)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+This diagram illustrates the relationships between Users, Transactions, Holiday Packages, and Categories.
 
-## Laravel Sponsors
+## Installation
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+1. Clone the repository:
+   ```
+   git clone https://github.com/asiata25/travel-kuy.git
+   ```
 
-### Premium Partners
+2. Navigate to the project directory:
+   ```
+   cd travel-kuy
+   ```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+3. Install PHP dependencies:
+   ```
+   composer install
+   ```
 
-## Contributing
+4. Install JavaScript dependencies:
+   ```
+   npm install
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+5. Copy the `.env.example` file to `.env` and configure your database settings.
 
-## Code of Conduct
+6. Generate an application key:
+   ```
+   php artisan key:generate
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+7. Run database migrations:
+   ```
+   php artisan migrate
+   ```
 
-## Security Vulnerabilities
+8. Seed the database with initial data (optional):
+   ```
+   php artisan db:seed
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+9. Create a symbolic link for storage:
+   ```
+   php artisan storage:link
+   ```
 
-## License
+   **Don't forget this step!** It's crucial for proper file handling in the application.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Running the Application
+
+1. Start the Laravel development server:
+   ```
+   php artisan serve
+   ```
+
+2. In a new terminal, compile and watch for asset changes:
+   ```
+   npm run dev
+   ```
+
+The admin dashboard should now be accessible at `http://localhost:8000/admin`.
+
+## Test Account
+
+For testing purposes, you can use the following credentials to access the admin dashboard:
+
+- Email: test@example.com
+- Password: password
+
+
+## Author
+
+<p align="center">
+<a href="https://lutfikhoir.com/"><img src="https://img.shields.io/badge/Website-lutfikhoir.com-blue?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=101010" alt="Personal Website"></a>
+<a href="https://www.linkedin.com/in/lutfi-khoir-632524235/"><img src="https://img.shields.io/badge/LinkedIn-Lutfi%20Khoir-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010" alt="LinkedIn"></a>
+<a href="https://www.instagram.com/lutfi.khoirudin/"><img src="https://img.shields.io/badge/Instagram-@lutfi.khoirudin-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=101010" alt="Instagram"></a>
+<a href="https://www.youtube.com/@lutfikhoir2502"><img src="https://img.shields.io/badge/YouTube-Lutfi%20Khoir-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=101010" alt="YouTube Channel"></a>
+
+</p>
