@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Category;
 use App\Models\HolidayPackage;
+use App\Models\PackageVariant;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -29,10 +30,13 @@ class DatabaseSeeder extends Seeder
         HolidayPackage::factory(11)
             ->create()
             ->each(function ($holidayPackage) use ($categories) {
-                // Attach random categories to each holiday package
                 $holidayPackage->categories()->attach(
-                    $categories->random(rand(1, count($categories)))->pluck('id')->toArray() // Attach 1 to 3 random categories
+                    $categories->random(rand(1, count($categories)))->pluck('id')->toArray()
                 );
+
+                PackageVariant::factory(rand(1, 3))
+                    ->for($holidayPackage, 'package')
+                    ->create();
             });
     }
 }
