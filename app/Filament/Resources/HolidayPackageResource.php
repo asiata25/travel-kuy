@@ -53,7 +53,6 @@ class HolidayPackageResource extends Resource
                                 TextInput::make('name')
                                     ->required()
                                     ->live(true)
-                                    ->unique()
                                     ->afterStateUpdated(fn(Set $set, ?string $state) => $set('slug', Str::slug($state))),
                                 TextInput::make('slug')
                                     ->disabled()
