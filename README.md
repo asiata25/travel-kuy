@@ -1,6 +1,13 @@
-<p align="center">
-  <img src="https://private-user-images.githubusercontent.com/41773797/257018536-8d5a0b12-4643-4b5c-964a-56f0db91b90a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjYyOTA2NDEsIm5iZiI6MTcyNjI5MDM0MSwicGF0aCI6Ii80MTc3Mzc5Ny8yNTcwMTg1MzYtOGQ1YTBiMTItNDY0My00YjVjLTk2NGEtNTZmMGRiOTFiOTBhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE0VDA1MDU0MVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU4ZDBiNGE4NWQ4NTFmMTlhZDMyM2QwMjBmNmNhNTRkM2MxZjcyOGJiNjcyZGZmMjY2ZTNkNWU5MzRjZGE4OWQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.fKHeE2JCvb0YH2f5Zt9gAy8HtsoLLd1skML3SqX-mZQ" alt="Filament Banner">
-</p>
+<div align="center">
+
+![PHP](https://img.shields.io/badge/-PHP_8.3.9-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS_3.4.12-06b6d4?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Livewire](https://img.shields.io/badge/-Livewire_3.x-FB70A9?style=for-the-badge&logo=livewire&logoColor=white)
+![Alpine.js](https://img.shields.io/badge/-Alpine.js_3.14.1-8BC0D0?style=for-the-badge&logo=alpine.js&logoColor=black)
+![Laravel](https://img.shields.io/badge/-Laravel_11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Filament](https://img.shields.io/badge/-Filament_3.x-F67A31?style=for-the-badge&logo=filament&logoColor=white)
+
+</div>
 
 # TravelKuy Admin Dashboard
 
